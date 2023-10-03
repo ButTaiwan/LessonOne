@@ -49,7 +49,7 @@ Lesson One 支援以下各種拼音會用到的所有字母與聲調組合：
 
 ## 最新版本與下載方式
 
-目前最新版本為 1.000。
+目前最新版本為 1.100。
 
 一般電腦安裝版本，請點選本頁面右側「[Releases](https://github.com/ButTaiwan/LessonOne/releases)」處的最新發行版本，下載 LessonOne.zip。解壓縮後安裝裡面的 .ttf 字型檔案即可。
 
