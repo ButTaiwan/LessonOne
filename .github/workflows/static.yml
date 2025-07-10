@@ -33,15 +33,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Copy files
+        run:
+          cp ./ttf/* ./pages/
+          cp ./woff/* ./pages/
+          cp ./vf/* ./pages/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: |
-            ./index.html
-            ./ttf/
-            ./vf/
-            ./woff/
+          path: './pages'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
