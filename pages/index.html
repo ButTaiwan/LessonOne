@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson One</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta property="og:title" content="Lesson One (Font)">
+<meta property="og:image" content="https://buttaiwan.github.io/lesson1/cover.png">
+<meta property="og:width" content="1200">
+<meta property="og:height" content="640">
+<meta property="og:description" content="寫法貼近台灣教育用的英文字型，亦支援各種拼音系統。">
+<style>
+
+body { background-color: #fff; color: #333 }
+
+@font-face{
+    font-family: LessonOneVF; font-weight: 200 800; font-style: normal;
+	src: url(LessonOneVF.woff) format("woff supports variations"), url(LessonOneVF.woff) format("woff-variations"),
+		 url(LessonOneVF.ttf) format("truetype supports variations"), url(LessonOneVF.ttf) format("truetype-variations");
+}
+
+@font-face{
+    font-family: LessonOneVF; font-weight: 200 800; font-style: italic;
+	src: url(LessonOne-ItalicVF.woff) format("woff supports variations"), url(LessonOne-ItalicVF.woff) format("woff-variations"),
+		 url(LessonOne-ItalicVF.ttf) format("truetype supports variations"), url(LessonOne-ItalicVF.ttf) format("truetype-variations");
+}
+
+@font-face{
+    font-family: LessonOne; font-weight: 400; font-style: normal;
+	src: url(LessonOne-Regular.woff) format("woff"), url(LessonOne-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 600; font-style: normal;
+	src: url(LessonOne-Bold.woff) format("woff"), url(LessonOne-Bold.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 500; font-style: normal;
+	src: url(LessonOne-Medium.woff) format("woff"), url(LessonOne-Medium.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 200; font-style: normal;
+	src: url(LessonOne-Light.woff) format("woff"), url(LessonOne-Light.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 800; font-style: normal;
+	src: url(LessonOne-Extra.woff) format("woff"), url(LessonOne-Extra.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: LessonOne; font-weight: 400; font-style: italic;
+	src: url(LessonOne-Italic.woff) format("woff"), url(LessonOne-Italic.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 600; font-style: italic;
+	src: url(LessonOne-BoldItalic.woff) format("woff"), url(LessonOne-BoldItalic.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 500; font-style: italic;
+	src: url(LessonOne-MediumItalic.woff) format("woff"), url(LessonOne-MediumItalic.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 200; font-style: italic;
+	src: url(LessonOne-LightItalic.woff) format("woff"), url(LessonOne-LightItalic.ttf) format("truetype");
+}
+@font-face{
+    font-family: LessonOne; font-weight: 800; font-style: italic;
+	src: url(LessonOne-ExtraItalic.woff) format("woff"), url(LessonOne-ExtraItalic.ttf) format("truetype");
+}
+
+#title { margin: 10px 155px }
+#title h1 { font-family: LessonOne; font-size: 300%; display: inline; }
+#title a { font-family: LessonOne; font-size: 200%; font-weight: 600; text-decoration: none; padding-left: 1em }
+#title a:hover { color: #c04 }
+
+#navi { margin: 30px 160px; list-style: none; padding: 0 }
+#navi li { display: inline-block; margin-right: 0.5em; cursor: pointer; white-space: nowrap;}
+#navi li:hover {color: #c04 }
+
+p { font-size: 180%; font-family: LessonOne, sans-serif; line-height: 1.4; margin: 0;}
+p .tag { display: inline-block; width: 140px; text-align: right; margin-right: 20px; vertical-align: bottom; font: normal 70%/1.4 sans-serif; color: #444 }
+
+.light p, .light #custom { font-weight: 200 }
+.regular p, .regular #custom { font-weight: 400 }
+.medium p, .medium #custom { font-weight: 500 }
+.bold p, .bold #custom { font-weight: 600 }
+.extra p, .extra #custom { font-weight: 800 }
+.vf p, .vf #custom { font-family: LessonOneVF, sans-serif }
+
+.italic p, .italic #custom { font-style: italic }
+
+#vfval { font-size: 70% }
+#slider { width: 200px }
+#check { display: inline-block; width: 1.5em; height: 1.5em }
+#custom { border: 0; font-size: 100%; padding: 0; width: 80%; font-family: LessonOne, sans-serif; line-height: 1.5 }
+
+p.line { margin: 0.8em 0 }
+
+@media screen and (max-width: 640px) { 
+	#title { margin: 10px 0; padding: 10px 4px; border-bottom: 1px solid #999 }
+	#title h1 { font-size: 200%; float: left; margin: 0 }
+	#title a { display: block; text-align: right; font-size: 100%; padding: 3px 0px; line-height: 1.2 }
+	p { font-size: 110% }
+	p .tag { display: block; font-size: 60%; text-align: left; margin-top: 6px }
+
+	#navi { margin: 20px 4px; clear: both; }
+	#custom { width: 98%; }
+}
+
+</style>
+</head>
+<script>
+	var weight = 'regular';
+	var italic = false;
+
+	function setDemo(cls) {
+		if (cls) weight = cls;
+		italic = document.getElementById('check').checked;
+		
+		document.getElementById('demo').className = weight + (italic ? ' italic' : '');
+
+		var sliderVal = document.getElementById('slider').value;
+		var plist = document.querySelectorAll('#demo p');
+		for (var i in plist) {
+			plist[i].style = (weight == 'vf' ? 'font-weight: ' + sliderVal : '');
+		}
+		document.getElementById('custom').style = (weight == 'vf' ? 'font-weight: ' + sliderVal : '');
+		if (weight == 'vf') document.getElementById('vfval').innerText = '(' + document.getElementById('slider').value + ')';
+	}
+</script>
+<body>
+	<div id="title">
+		<h1>Lesson One</h1>
+		<a href="https://github.com/ButTaiwan/LessonOne">GitHub</a>
+		<a href="https://github.com/ButTaiwan/LessonOne/releases">Download</a>
+	</div>
+	<ul id="navi">
+		<li class="light"><p onmouseover="setDemo('light')">Light</p></li>
+		<li class="regular"><p onmouseover="setDemo('regular')">Regular</p></li>
+		<li class="medium"><p onmouseover="setDemo('medium')">Medium</p></li>
+		<li class="bold"><p onmouseover="setDemo('bold')">Bold</p></li>
+		<li class="extra"><p onmouseover="setDemo('extra')">Extra</p></li>
+		<li class="vf"><p>VF:<input type="range" min="200" max="800" value="400" id="slider" onchange="setDemo('vf')" /><span id="vfval"></span></p></li>
+		<li class="italic"><label><p><input type="checkbox" id="check" onclick="setDemo()">italic</p></label></li>
+	</ul>
+	<div id="demo">
+		<p><span class="tag">英語</span>Please hold the handrail, and step firmly on to the escalator.</p>
+		<p><span class="tag">漢語拼音</span>Qǐng jǐn wò fúshǒu, zhàn wěn tàjīe.</p>
+		<p><span class="tag">威妥瑪拼音</span>Ch‘ing³ chin³ wo⁴ fu²-shou³, chàn⁴ wên³ t‘a⁴-chieh¹.</p>
+		<p><span class="tag">台羅拼音</span>Tshiánn tshiú huānn hōo hó-sè, kha khiā hōo tsāi.</p>
+		<p><span class="tag">白話字</span>Chhiáⁿ chhiú hōaⁿ hō͘ hó-sè, kha khiā hō͘ chāi.</p>
+		<p><span class="tag">客語拼音</span>Coˊtien fuˇtoiˊge siiˇjiedˋoi kiˊhoˋ, suˋme oi banˊhoˋse loiˇ.</p>
+		<p><span class="tag">KK音標</span>/pliz hold ðə ‵hænd͵rel, ænd stɛp ‵fɝmlɪ ɑn tu ðɪ ‵ɛskə͵letɚ./</p>
+		
+		<p class="line"></p>
+		<p><span class="tag">英語</span>ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</p>
+		<p><span class="tag">漢語拼音</span>āáǎàēéěèīíǐìōóǒòūúǔùüǖǘǚǜêê̄ếê̌ềm̄ḿm̌m̀n̄ńňǹ ĀÁǍÀĒÉĚÈĪÍǏÌŌÓǑÒŪÚǓÙÜǕǗǙǛÊÊ̄ẾÊ̌ỀM̄ḾM̌M̀N̄ŃŇǸ</p>
+		<p><span class="tag">台語組合</span>◌́◌̀◌̂◌̌◌̄◌̍◌̋◌̆◌͘ a̍a̋e̍e̋i̍i̋o̍u̍m̀m̂m̌m̄m̍m̋m̆n̂n̄n̍n̋n̆ A̍A̋E̍E̋I̍I̋O̍U̍M̀M̂M̌M̄M̍M̋M̆N̂N̄N̍N̋N̆</p>
+		<p><span class="tag">台語預組</span>áàǎâāăéèêěēĕíìîǐīĭóòôǒōőŏúùûǔūűŭḿńǹňⁿ ÁÀÂǍĀĂÉÈÊĚĒĔÍÌÎǏĪĬÓÒÔǑŌŐŎÚÙÛǓŪŰŬḾŃǸŇᴺ</p>
+		<p><span class="tag">三種順序</span>o͘ó͘ò͘ô͘ǒ͘ō͘o̍͘ŏ͘ő͘ O͘Ó͘Ò͘Ô͘Ǒ͘Ō͘O̍͘Ŏ͘Ő͘ ó͘ò͘ô͘ǒ͘ō͘o̍͘ŏ͘ő͘ Ó͘Ò͘Ô͘Ǒ͘Ō͘O̍͘Ŏ͘Ő͘ ó͘ò͘ô͘ǒ͘ō͘o̍͘ŏ͘ő͘ Ó͘Ò͘Ô͘Ǒ͘Ō͘O̍͘Ŏ͘Ő͘</p>
+		<p><span class="tag">客語等聲調</span>⁺ˆˇˊˋ ⁰¹²³⁴⁵⁶⁷⁸⁹</p>
+		<p><span class="tag">族語拼音</span>ʼ⌃ṟéɨʉṞÉƗɄ</p>
+		<p><span class="tag">馬祖福州語</span>āǎáàâēěéèêīǐíìîōǒóòôūǔúùûȳy̌ýỳŷ ĀǍÁÀÂĒĚÉÈÊĪǏÍÌÎŌǑÓÒÔŪǓÚÙÛȲY̌ÝỲŶ</p>
+		<p><span class="tag">客語白話字</span>ṳṳ̂ṳ̀ṳ́ṳ̍ ṲṲ̂Ṳ̀Ṳ́Ṳ̍ ÅE̊I̊O̊ŮY̊ åe̊i̊o̊ůẙ</p>
+		<p><span class="tag">KK/DJ音標</span>aæɛəɪɔʌɚɝː aɪau θʃðʒŋḷṃṇ ‵ʹ͵ˈˌ</p>
+		<p><span class="tag">越南文</span>Xin cho tôi một tô phở bò.</p>
+		<p class="line"></p>
+		<p><span class="tag">自己輸入</span><input id="custom" value="The quick brown fox jumps over the lazy dog."></p>
+	</div>
+</body>
+</html>
