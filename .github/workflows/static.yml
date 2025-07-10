@@ -38,10 +38,10 @@ jobs:
         with:
           # Upload entire repository
           path: |
-            index.html
-            ttf/
-            vf/
-            woff/
+            ./index.html
+            ./ttf/
+            ./vf/
+            ./woff/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
