@@ -34,9 +34,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Copy files
-        run:
-          cp ./ttf/* ./pages/
-          cp ./woff/* ./pages/
+        run: |
+          cp ./ttf/*.ttf ./pages/
+          cp ./woff/*.woff ./pages/
           cp ./vf/* ./pages/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
